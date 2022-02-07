@@ -10,36 +10,50 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-bgc: #2f303a;
-  --primary-section-bgc: #e5e5e5;
-  --secondery-section-bgc: #f5f4fa;
+  --primary-bgc: #e5e5e5;
+  --primary-section-bgc: #f5f4fa;
+  --hero-footer-bgc: #2f303a;
   --primary-white: #ffffff;
 }
 
 body {
   color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
   background-color: var(--primary-bgc);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .list {
   list-style: none;
 }
-.link {
+.link,
+.link:visited {
   text-decoration: none;
 }
 
 /* Header */
-.head {
+.header {
   background-color: var(--primary-white);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .logo {
   font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.48;
+
+  color: var(--secondary-text-color);
 }
-.web-color {
+.logo .web-color {
   color: var(--accent-color);
 }
-.site-nav {
+.site-nav .link {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
@@ -51,10 +65,85 @@ body {
   color: var(--accent-color);
 }
 .contacts .link {
-  color: var(--primary-text-color);
+  color: currentColor;
 }
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
 }
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--hero-footer-bgc);
+  color: var(--primary-white);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
 /* Features */
+
+.features {
+  display: none;
+}
+.feature-list .title {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Work */
+
+.section > .section-title {
+  color: var(--secondary-text-color);
+
+  font-size: 32px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Team */
+.team {
+  background-color: var(--primary-section-bgc);
+}
+.member-list {
+  line-height: 1.19;
+  text-align: center;
+}
+.member-list .title {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--hero-footer-bgc);
+}
+.footer .logo,
+.footer .direction {
+  color: var(--primary-white);
+}
+
+.footer a[href^="mail"],
+.footer a[href^="tel"] {
+  color: rgba(255, 255, 255, 0.6);
+}
