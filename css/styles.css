@@ -53,6 +53,11 @@ body {
 .logo .web-color {
   color: var(--accent-color);
 }
+.link {
+  font-family: inherit;
+  text-decoration: none;
+  color: currentColor;
+}
 .site-nav .link {
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -63,9 +68,6 @@ body {
 }
 .site-nav .link.current {
   color: var(--accent-color);
-}
-.contacts .link {
-  color: currentColor;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -146,4 +148,38 @@ body {
 .footer a[href^="mail"],
 .footer a[href^="tel"] {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio */
+
+/* Filter */
+.filter .nav-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.filter .nav-button:hover,
+.filter .nav-button:focus,
+.filter .nav-button:active {
+  background-color: var(--accent-color);
+  color: var(--primary-white);
+}
+
+/* Projects */
+.link .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color);
+}
+.link .type {
+  font-size: 16px;
+  line-height: 1.87;
 }
