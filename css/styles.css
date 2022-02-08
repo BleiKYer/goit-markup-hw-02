@@ -100,7 +100,8 @@ body {
 
 /* Features */
 
-.features {
+.features,
+.portfolio {
   display: none;
 }
 .feature-list .title {
